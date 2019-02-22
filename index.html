@@ -9,26 +9,53 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <style type="text/css">
+                <style>
+                    .nav-bar {
+                        height: 10vh;
+                        color : white;
+                        background-color: black
+                    }
+                .sec-one {
+                    background: url('taj-mahal-2.jpg') center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .sec-one-cont {
+                    height: auto;
+                    color : white;
+                }
+                .sec-three-btn {
+                    height: 60px;
+                    border: 4px solid white;
+                    margin-bottom: 10vh;
+                    line-height: 52px;
+                    font-size: 20px;
+                    margin-top: 4vh;
+                    width: 15vw;
+                    text-decoration: none;
+                    color: white;
+                    padding-left: 12px;
+                }
+
 	div{
 		margin-top: 10px;
 	}
-
 	p {
   		text-align: justify;
   		text-justify: inter-word;
+  		color: white;
 	}
 	ul{
 		list-style-type: none;
 		font-weight: bold;
-
 	}
 	li{
-
+		font-size: 13px;
 	}
-	li:hover{
+	/*li:hover{
 		list-style-type: circle;
-		/*list-style-color:blue;*/ 
-	}
+		/*list-style-color:blue; 
+	}*/
 	.video{
 		text-align: center;
 	}
@@ -57,7 +84,7 @@
 	    /*margin-top: 0px !important;*/
 	    padding-top: 40px !important;
 	    padding-bottom: 70px !important;
-	    background-image: url(main.jpg) !important;
+	    background-image: url(main.jpg);
 	}
 	@media (max-width: 780px){
 		#firstVideo{
@@ -79,17 +106,78 @@
 </head>
 <body>
 
+<!--Top Division-->
+        <div class="container-fluid sec-one">
+            <div class="row nav-bar">
+                <div class="col-md-4" >
+                    LOGO
+                </div>
+                <div class="col-md-8" >
+                    NAV BAR
+                </div>
+            </div>
+            <div class="row sec-one-cont" >
+                <div class="col-sm-12 " style=" padding: 5vh 10vw 0 10vw;">
+                    <div style=" margin-bottom: 5vh;">
+                        <p style="font-size: 4.5em;"><b>Transcend - Evolve - Sustain</b></p>
+                    </div>
+                    <div style=" margin-bottom: 7vh;">
+                        <p style="font-size: 3em;"><b>IWA Technoscape 2020</b></p>
+                    </div>
+                    <div style=" margin-bottom: 7vh;">
+                        <p style="font-size: 2em;">First Trans-asia IWA Young Water Professionals Conference on Smart Technologies for Water and Wastewater Treatment.</p>
+                    </div>
+                    <div style=" margin-bottom: 15vh;">
+                        <p style="font-size: 2em;"><b>16th to 19th December 2020, VELLORE, INDIA</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Second Division-->
+        <div class="container-fluid" >
+            <div class="row" style=" padding: 10vh 10vw 0 10vw; font-family: sans-serif">
+                <div style="margin-bottom: 15px;">
+                    <p style="font-size: 3em; color : dodgerblue;"><b>The flagship event for Young Water Professional conference in Asia</b></p>
+                </div>
+                <div style="margin-bottom: 10vh;">
+                    <p style="font-size: 1.5em;">First Trans- Asia conference is the flagship event of the IWA - India to be held at Vellore Institute of Technology (VIT) - Vellore, India for the water Professionals from all walks of life to conglomerate and brainstorm for a water sustainable world. </p>
+                    <p style="font-size: 1.5em;">IWA Young Water Professionals is a community established with the aim to empower them as emerging water talent in the water sector and the association.</p>
+                    <p style="font-size: 1.5em;">IWA Young Water Professionals are dedicated, enthusiastic, and passionate water professionals (IWA member) aged 35 or below, who wish to develop their career, build their network and engage in the International water community to contribute to inspire change.
+                    The community covers about 100 countries, and represents academia, policy, consultancy and industry, and cover a wide range of disciplines. Everyone, who is interested in any angle of water management is welcome to join. Internationally the community works closely with IWA to be empowered in the association's activities and the water sector. Over the years the community has worked on and increasingly been involved in IWA's leadership:</p>
+                    <ul style="font-size: 1.5em;">
+                        <li>Currently 5 positions in IWA strategic Council are held by our Young Water Professionals.</li>
+                        <li>YWP Steering Committee has min 8 YWPs that represent the YWP community.</li>
+                        <li>The Chair of the YWP Steering Committee is invited to the IWA board</li>
+                        <li>Currently about 30 of 49 IWA Specialist Group Management committees have a YWP representative to encourage YWP engagement and empower them to become leaders in their field</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Third Division-->
+        <div class="container-fluid" >
+            <div class="row" style=" padding: 8vh 10vw 0 10vw; background-color: rgb(92,161,220); color : white;">
+                <div style="margin-bottom: 15px;">
+                    <p style="font-size: 3em; "><b>About IWA</b></p>
+                </div>
+                <div>
+                    <p style="font-size: 1.5em;">Water nurtures every aspect of human and environmental existence. The world today is faced by several water challenges which require an unprecedented global response. IWA members and staff are situated in 130 countries worldwide, forming the largest international network of water professionals working towards a water wise world.</p>
+                </div>
+                <a href="#"><div class="sec-three-btn" style="background-color : white; color : rgb(92,161,220)">CLICK HERE</div></a>
+            </div>
+        </div>
+
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-4 col-sm-12 listContent">
 			<ul>
 				<li>Message from IWA</li>
-				<li>Emerging Water</li>
-				<li>Leaders</li>
+				<li style="padding-left: 6px;">Emerging Water</li>
+				<li style="padding-left: 6px;">Leaders</li>
 			</ul>
 		</div>
 		<div class="col-lg-8 col-sm-12 video">
-			<iframe id="firstVideo" src="https://player.vimeo.com/video/290151366?app_id=122963" width="500" height="281" frameborder="0" title="IWA" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+			<iframe id="firstVideo" src="https://player.vimeo.com/video/290151366?app_id=122963" width="600" height="291" frameborder="0" title="IWA" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 		</div>
 	</div>
 </div>
@@ -131,9 +219,9 @@
 	<div class="row">
 		<div class="col-lg-4 col-sm-12 listContent">
 			<ul>
-				<li>Message from IWA</li>
-				<li>Emerging Water</li>
-				<li>Leaders</li>
+				<li >Message from IWA</li>
+				<li style="padding-left: 6px;">Emerging Water</li>
+				<li style="padding-left: 6px;">Leaders</li>
 			</ul>
 		</div>
 		<div class="col-lg-8 col-sm-12 video">
@@ -151,9 +239,20 @@
 			
 			<div class="">
 				<div class="">
-					<h3><span>A Water experts destination</span></h3>
+					<h3 style="color:white;"><span>A Water experts destination</span></h3>
 					<p>
-						India is a land of unparalleled beauty ranging from snow-capped mountains to hot deserts. It is endowed with a diverse variety of landscapes, natural features and weather conditions and moments of magic await the explorer in every state, in every corner. There exists a myriad of cultures comprising of influences which also include Portuguese, Dutch, French, Mughals, Persians and British nuances.  
+						India is a land of unparalleled beauty ranging from snow-capped mountains to hot deserts. It is endowed with a diverse variety of landscapes, natural features and weather conditions and moments of magic await the explorer in every state, in every corner. There exists a myriad of cultures comprising of influences which also include Portuguese, Dutch, French, Mughals, Persians and British nuances.    <br> 
+					</p>
+					<p>   
+						 Agriculturally driven, the country is home to lush paddy fields, spectacular sunrises, colourful places of worship and rock cut structures and pristine clear waters that offer a wonderful experience.</p>
+					<p>						 
+					Tamil Nadu, India’s southernmost state has a lot to offer with unique festivals, the classical language ‘Tamil’, the people who epitomize the Indian tradition of putting guests before oneself and ancient architectural marvels that go as far back as two millennia of which some are world heritage sites. The fervour of fans, their unique love and frenzy for cinema and the culinary experience can rival even the best in the world. It has a beautiful 1000 km coastline, with golden sands, lush vegetation and twisted gorges cascading into a series of spectacular waterfalls. Not to forget the juxtaposition of “shola forest and grassland ecosystem” and the beautiful mountainous regions.
+					</p>
+					<p>
+ 					They've kept the tale a hundred years, they’ll keep the tale a hundred more”</p>
+					<p style="text-align: right;">– Sir Henry Newbolt on “Vellore”</p>
+					<p>
+						With its bright blue sky, hillocks and hot sun, Vellore, "The City of spears” is located on the banks of the River Palar (பாலாறு) in Tamil Nadu. The historical city having shadows of a glorious past is known for its enriching legacy and shimmering early Dravidian culture. The magnificent Vellore fortress in the centre of the city is the finest and one of the best-preserved specimens worthy of being called a marvel of military architecture. The city surrounded by hills, facing the lovely sundown, puts on a purple tinge like a heather bloom to greet us with tropical temperature. 
 					</p>
 				</div>
 
