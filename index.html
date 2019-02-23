@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>WWC</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-<style type="text/css">
-                <style>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>Event Vellore</title>
+            
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
                     .nav-bar {
                         height: 10vh;
                         color : white;
@@ -37,81 +36,106 @@
                     padding-left: 12px;
                 }
 
-			div{
-				margin-top: 10px;
-			}
-			p {
-		  		text-align: justify;
-		  		text-justify: inter-word;
-		  		color: white;
-		  		font-size: 1.2em
-			}
-			ul{
-				list-style-type: none;
-				font-weight: bold;
-			}
-			li{
-				font-size: 13px;
-			}
-			/*li:hover{
-				list-style-type: circle;
-				/*list-style-color:blue; 
-			}*/
-			.video{
-				text-align: center;
-			}
-			.listContent{
-				padding-left: 20vw;
-				padding-top: 1vh
-			}
-			.program {
-			    /*margin-top: 0px !important;*/
-			    padding-top: 40px !important;
-			    padding-bottom: 70px !important;
-			    background-image: url(banner.jpg) !important;
-			}
-			
-			span{
-				font-size: 1.3em;
-			}
-			.destination {
-			    /*margin-top: 0px !important;*/
-			    padding-left: 89.5px; 
-			    padding-right: 89.5px;
-			    padding-top: 40px !important;
-			    padding-bottom: 70px !important;
-			    background-image: url(main.jpg);
-			}
 
-			@media (max-width: 780px){
-				#firstVideo{
-					width: 100%;
-				}
-				.listContent{
-					padding-left: 25vw;
-				}
-				.program{
-					height: 450px
-				}
-				#seventh{
-					width: 95%;
-					margin: auto auto;
-				}
-				.destination{
-					width: 95%;
-					padding-left: 8px; 
-			    	padding-right: 8px;
-				}
-			}
-	
+                .nav-bar {
+                        height: 10vh;
+                        color : white;
+                        background-color: black
+                    }
+                .sec-one {
+                    background: url('taj-mahal-2.jpg') center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .sec-one-cont {
+                    height: auto;
+                    color : white;
+                }
+                .sec-three-btn {
+                    height: 60px;
+                    border: 4px solid white;
+                    margin-bottom: 10vh;
+                    line-height: 52px;
+                    font-size: 20px;
+                    margin-top: 4vh;
+                    width: 15vw;
+                    text-decoration: none;
+                    color: white;
+                    padding-left: 12px;
+                }
+
+                div{
+                    margin-top: 10px;
+                }
+                p {
+                    text-align: justify;
+                    text-justify: inter-word;
+                    font-size: 1.2em
+                }
+                ul{
+                    font-weight: bold;
+                }
+                li{
+                    font-size: 13px;
+                }
+                .video{
+                    text-align: center;
+                }
+                .listContent{
+                    padding-left: 20vw;
+                    padding-top: 1vh
+                }
+                .program {
+                    padding-top: 40px !important;
+                    padding-bottom: 70px !important;
+                    width: 100%;
+                    background-image: url(banner.jpg) !important;
+                    color: white;
+                }
+                
+                span{
+                    font-size: 1.3em;
+                }
+                .destination {
+                    padding-left: 89.5px; 
+                    padding-right: 89.5px;
+                    padding-top: 40px !important;
+                    padding-bottom: 70px !important;
+                    background-image: url(main.jpg);
+                }
+
+                @media (max-width: 780px){
+                    #firstVideo{
+                        width: 100%;
+                    }
+                    .listContent{
+                        padding-left: 25vw;
+                    }
+                    .program{
+                        height: 450px;
+                    }
+                    #seventh{
+                        width: 95%;
+                        margin: auto auto;
+                    }
+                    .destination{
+                        width: 95%;
+                        padding-left: 8px; 
+                        padding-right: 8px;
+                    }
+                }
+        
+
+
 
 </style>
 
-
 </head>
-<body>
 
-<!--Top Division-->
+
+
+    <body>
+        <!--Top Division-->
         <div class="container-fluid sec-one">
             <div class="row nav-bar">
                 <div class="col-md-4" >
@@ -172,114 +196,122 @@
         </div>
 
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-lg-4 col-sm-12 listContent">
-			<ul>
-				<li>Message from IWA</li>
-				<li style="padding-left: 6px;">Emerging Water</li>
-				<li style="padding-left: 6px;">Leaders</li>
-			</ul>
-		</div>
-		<div class="col-lg-8 col-sm-12 video">
-			<iframe id="firstVideo" src="https://player.vimeo.com/video/290151366?app_id=122963" width="600" height="291" frameborder="0" title="IWA" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-		</div>
-	</div>
-</div>
+                <!-- Fourth division -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 listContent">
+                    <ul>
+                        <li>Message from IWA</li>
+                        <li>Emerging Water</li>
+                        <li>Leaders</li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-sm-12 video">
+                    <iframe id="firstVideo" src="https://player.vimeo.com/video/290151366?app_id=122963" width="600" height="291" frameborder="0" title="IWA" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth division -->
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="x program y" style="box-sizing: border-box; padding-left: 89.5px; padding-right: 89.5px;">
+                    
+                    <div>
+                        <div>
+                            <h3><span>Program</span></h3>
+                        </div>
+                    </div>
+
+                    
+                        <div>
+                            <h1><span>Under Construction </span></h1>
+                            <p><span>Content with a button.</span></p>
+                        </div>
+                    
+
+                    <div class="">
+                        <a class="" href="#" title="" target="_blank"><button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Primary&nbsp;&nbsp;&nbsp;</button>
+                        </a>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+         
+
+                <!-- Six division -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 listContent">
+                    <ul>
+                        <li >Message from IWA</li>
+                        <li style="padding-left: 6px;">Emerging Water</li>
+                        <li style="padding-left: 6px;">Leaders</li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-sm-12 video">
+                    <iframe id="firstVideo" src="https://player.vimeo.com/video/290151366?app_id=122963" width="500" height="281" frameborder="0" title="IWA" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
 
 
-<div class="container-fluid">
-	<div class="row">
-
-		<div class="x program y" style="box-sizing: border-box; padding-left: 89.5px; padding-right: 89.5px;">
-			
-			<div class="">
-				<div class="">
-					<h3><span>Program</span></h3>
-				</div>
-			</div>
-
-			<div class="">
-				<div class="">
-					<h1><span>Under Construction </span></h1>
-					<p><span>Content with a button.</span></p>
-				</div>
-			</div>
-
-			<div class="">
-				<a class="" href="#" title="" target="_blank"><button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Primary&nbsp;&nbsp;&nbsp;</button>
-				</a>
-			</div>
-
-				<!-- 
-			<div class="" style="height: 150%; top: -30.76%;">
-			</div> -->
-			
-		</div>
-
-	</div>
-</div>
-
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-lg-4 col-sm-12 listContent">
-			<ul>
-				<li >Message from IWA</li>
-				<li style="padding-left: 6px;">Emerging Water</li>
-				<li style="padding-left: 6px;">Leaders</li>
-			</ul>
-		</div>
-		<div class="col-lg-8 col-sm-12 video">
-			<iframe id="firstVideo" src="https://player.vimeo.com/video/290151366?app_id=122963" width="500" height="281" frameborder="0" title="IWA" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-		</div>
-	</div>
-</div>
+         <!-- Seventh division -->
 
 
+        <div class="container-fluid">
+            <div class="row">
 
-<div class="container-fluid">
-	<div class="row">
+                <div class="destination" style="box-sizing: border-box;">
+                    
+                    <div style="color: white;">
+                        <div id="seventh">
+                            <h3 style="color:white;"><span>A Water experts destination</span></h3>
+                            <p>
+                                India is a land of unparalleled beauty ranging from snow-capped mountains to hot deserts. It is endowed with a diverse variety of landscapes, natural features and weather conditions and moments of magic await the explorer in every state, in every corner. There exists a myriad of cultures comprising of influences which also include Portuguese, Dutch, French, Mughals, Persians and British nuances.    <br> 
+                            </p>
+                            <p>   
+                                 Agriculturally driven, the country is home to lush paddy fields, spectacular sunrises, colourful places of worship and rock cut structures and pristine clear waters that offer a wonderful experience.</p>
+                            <p>                      
+                            Tamil Nadu, India’s southernmost state has a lot to offer with unique festivals, the classical language ‘Tamil’, the people who epitomize the Indian tradition of putting guests before oneself and ancient architectural marvels that go as far back as two millennia of which some are world heritage sites. The fervour of fans, their unique love and frenzy for cinema and the culinary experience can rival even the best in the world. It has a beautiful 1000 km coastline, with golden sands, lush vegetation and twisted gorges cascading into a series of spectacular waterfalls. Not to forget the juxtaposition of “shola forest and grassland ecosystem” and the beautiful mountainous regions.
+                            </p>
+                            <p>
+                            They've kept the tale a hundred years, they’ll keep the tale a hundred more”</p>
+                            <p style="text-align: right;">– Sir Henry Newbolt on “Vellore”</p>
+                            <p>
+                                With its bright blue sky, hillocks and hot sun, Vellore, "The City of spears” is located on the banks of the River Palar (பாலாறு) in Tamil Nadu. The historical city having shadows of a glorious past is known for its enriching legacy and shimmering early Dravidian culture. The magnificent Vellore fortress in the centre of the city is the finest and one of the best-preserved specimens worthy of being called a marvel of military architecture. The city surrounded by hills, facing the lovely sundown, puts on a purple tinge like a heather bloom to greet us with tropical temperature. 
+                            </p>
+                        </div>
 
-		<div class="destination" style="box-sizing: border-box;">
-			
-			<div>
-				<div id="seventh">
-					<h3 style="color:white;"><span>A Water experts destination</span></h3>
-					<p>
-						India is a land of unparalleled beauty ranging from snow-capped mountains to hot deserts. It is endowed with a diverse variety of landscapes, natural features and weather conditions and moments of magic await the explorer in every state, in every corner. There exists a myriad of cultures comprising of influences which also include Portuguese, Dutch, French, Mughals, Persians and British nuances.    <br> 
-					</p>
-					<p>   
-						 Agriculturally driven, the country is home to lush paddy fields, spectacular sunrises, colourful places of worship and rock cut structures and pristine clear waters that offer a wonderful experience.</p>
-					<p>						 
-					Tamil Nadu, India’s southernmost state has a lot to offer with unique festivals, the classical language ‘Tamil’, the people who epitomize the Indian tradition of putting guests before oneself and ancient architectural marvels that go as far back as two millennia of which some are world heritage sites. The fervour of fans, their unique love and frenzy for cinema and the culinary experience can rival even the best in the world. It has a beautiful 1000 km coastline, with golden sands, lush vegetation and twisted gorges cascading into a series of spectacular waterfalls. Not to forget the juxtaposition of “shola forest and grassland ecosystem” and the beautiful mountainous regions.
-					</p>
-					<p>
- 					They've kept the tale a hundred years, they’ll keep the tale a hundred more”</p>
-					<p style="text-align: right;">– Sir Henry Newbolt on “Vellore”</p>
-					<p>
-						With its bright blue sky, hillocks and hot sun, Vellore, "The City of spears” is located on the banks of the River Palar (பாலாறு) in Tamil Nadu. The historical city having shadows of a glorious past is known for its enriching legacy and shimmering early Dravidian culture. The magnificent Vellore fortress in the centre of the city is the finest and one of the best-preserved specimens worthy of being called a marvel of military architecture. The city surrounded by hills, facing the lovely sundown, puts on a purple tinge like a heather bloom to greet us with tropical temperature. 
-					</p>
-				</div>
+                    <div class="">
+                        <a class="" href="#" title="" target="_blank"><button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Destination&nbsp;&nbsp;&nbsp;</button>
+                        </a>
+                    </div>
 
-			<div class="">
-				<a class="" href="#" title="" target="_blank"><button type="button" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Destination&nbsp;&nbsp;&nbsp;</button>
-				</a>
-			</div>
+                    </div>
 
-			</div>
+                    
 
-			
+                    
+                </div>
 
-			
-		</div>
-
-	</div>
-</div>
+            </div>
+        </div>
 
 
 
 
 
 
-</body>
+
+
+
+
+
+    </body>
 </html>
