@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Floorplan</title>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+	
+
+
+.videos{
+	display: inline-block;
+}
+
+
+	@media(min-width: 700px){
+				.greycontent{
+					width: 27vw;
+					height: 30vh;
+					display: inline-block;
+
+				}
+			}
+
+		#page-header {
+		    height: 70vh;
+		    background-color: #009EE7; 
+		    /* position: relative; */
+			}
+			.black{
+				background-color: black;
+				color: white;
+				text-align: center;
+				font-size: 20px;
+				/*display: inline-block;*/
+				height: 16vh;
+				width: 13vw;
+				/*border-right: 1px solid red;*/
+				vertical-align: middle;
+				font-weight:900;
+				padding-top: 4vh;
+			}
+			#content {
+			  /*background-image: url('business.jpg');*/
+			  background-repeat: no-repeat;
+			  /*position: relative;*/
+			  width: 100%;
+			  background: url('http://worldwatercongress.org/wp-content/uploads/2018/04/iwacongress-Exhibition.png') center no-repeat fixed;
+			  background-size:cover; 
+			}
+
+			#content2 {
+			  /*background-image: url('business.jpg');*/
+			  background-repeat: no-repeat;
+			  position: relative;
+			  /*position: relative;*/
+			  width: 100%;
+			  background: url('http://worldwatercongress.org/wp-content/uploads/2018/04/IWA-Expo.png') center no-repeat;
+			  background-size:cover; 
+			}
+
+			.text-block {
+			  position: absolute;
+			  bottom: 20px;
+			  right: 20px;
+			  background-color: black;
+			  color: white;
+			  padding-left: 20px;
+			  padding-right: 20px;
+			}
+
+			.defwidth,.buttons{
+				/*display: inline-block;*/
+			}
+
+			.black-content {
+				height: 20vh;
+			}
+
+			@media (min-width: 900px){
+				.givepos{
+					 top:145vh;
+					 left: 50%;
+				}
+				.black{
+					display: inline-block;
+				}
+				
+			}
+
+			@media (max-width: 900px) {
+			.black-content {
+				height: 96vh;
+			}
+
+			}
+
+
+
+			.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+		  .carouse-control{
+		    &.left, &.right{
+		      background-image: none;
+		    }
+		  }
+		}
+
+		// non-related styling:
+		body{
+		  background: #333;
+		  color: #ddd;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="page-header">
+		<div id="content" style="height: 70vh;"></div>
+		<div>
+			<span style="color: #ffffff; font-size: 55px;position: absolute;z-index: 2; top:10vh;left: 10%;">The global event on water solutions.</span>
+			<p style="position: absolute;z-index: 2; top:35vh;left: 10%;right:7%;color: white;font-size: 15px;">Organised by the International Water Association, this is the global event on water solutions that brings together thought leaders, decision makers, leading researchers and business representatives from within and outside the water sector.</p>
+			<p style="position: absolute;z-index: 2; top:45vh;left: 10%;right:7%;color: white;font-size: 15px;">Focusing on leading practice, innovation and solutions, the event provides new networking and business opportunities, and ensures maximum exposure between participants, exhibitors and sponsors. It connects you with the right people and the right solutions, fosters new collaborations and partnerships, and provides a platform for exhibitors and sponsors to raise their profile amongst leading water professionals and companies.</p>
+		</div> 
+	</div>
+<div class="black-content" style="background-color: black;text-align: center;">
+<div class="container">
+<div class="row">
+	
+		<div class="black">
+			<p><strong>Last&nbsp;</strong><strong>Conference </strong><strong>in Numbers</strong></p>
+		</div>
+
+		<div class="black">
+			<p><strong>9815</strong><br>
+		participants</p>
+		</div>
+		
+		<div class="black">
+			<p><strong>462</strong><br>
+		presentations</p>
+		</div>
+		
+		<div class="black">
+			<p><strong>280</strong><br>
+		hours</p>
+		</div>
+			
+		<div class="black">
+			<p><strong>252</strong><br>
+		exhibitors</p>
+
+		</div>
+		
+		<div class="black">
+			<p><strong>75%</strong><br>
+		decision makers</p>
+
+		</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+	<div id="page-header">
+		<div id="content2" style="height: 70vh;"></div>
+		<div>
+			<h1 style="position: absolute;z-index: 2; top:100vh;left: 10%"><span style="color: #ffffff;">The global event on water solutions.
+			</span></h1>
+			<h2 style="position: absolute;z-index: 2; top:110vh;left: 10%;right:7%;color: white;font-size: 15px;">Showcase your company and solutions in front of over 5000 water professionals.</h2>
+		
+
+		<div class="buttons">
+
+			<div class="defwidth">
+					 
+			<div class="givepos" style="position: absolute;z-index: 2; background-color: lightblue;top:145vh;left: 10%; height: 35px;width: 250px;line-height: 30px;text-align: center;">
+			<a href="#" title="" target="_blank">2018 INVITATAION TO EXHIN+BIT</a>
+			</div>
+			</div>
+
+			<div class="defwidth">
+			<div class="givepos" style="position: absolute;z-index: 2;background-color: lightblue;top:145vh;left: 30%;  height: 35px;width: 250px;line-height: 30px;text-align: center;">
+			<a href="#" title="" target="_blank">BOOK YOUR STAND SPACE NOW</a>
+			</div>
+			</div>
+
+			<div class="defwidth">
+			<div class="givepos" style="position: absolute;z-index: 2;background-color: lightblue;top:145vh;left: 50%; height: 35px;width: 250px;line-height: 30px;text-align: center;">
+			<a href="#" title="" target="_blank">TERMS & CONDITION</a>
+			</div>
+			</div>
+
+		</div>
+
+		</div> 
+	</div>
+
+<div class="container">
+	<div class="row">
+		<div>
+						<div class="greycontent">
+								<h4 style="margin-top: -10px;">Satoshi Takizawa</h4>
+					            <p>Professor, Department of Urban Engineering, Graduate School of Engineering, The University of Tokyo</p>
+						</div>
+
+						<div class="greycontent">
+									<h4 style="padding-top: 10px">Myo Thein</h4>
+									<p>Deputy Head of Department, Engineering Department(Water and Sanitation), Yangon City Development Committee(YCDC)</p>
+						</div>
+
+						<div class="greycontent">
+									<h4>Tran Thi Viet Nga</h4>
+									<p>Associate Professor, Dean, Faculty of Environmental Engineering, National University of Civil Engineering (NUCE)</p>
+						</div>
+
+						<div class="greycontent">
+								<h4>Shigeyuki Matsumoto</h4>
+					            <p>Deputy Director General, Global Environment Department, Japan International Cooperation Agency (JICA)</p>
+						</div>
+
+						<div class="greycontent">
+								<h4>Satoshi Tamura</h4>
+								<p>Deputy Director General for Technical Affairs, Bureau of Waterworks, Tokyo Metropolitan Government</p>
+						</div>
+
+						<div class="greycontent">
+								<h4>Mamoru Kamiyama</h4>
+								<p>Deputy Director General for Technical Affairs, Bureau of Sewerage, Tokyo Metropolitan Government</p>
+						</div>
+		</div>
+</div>
+</div>
+
+
+
+
+<div id="page-header">
+		<div id="content2" style="height: 70vh;">
+			
+		<div>
+			<h1 style="position: absolute;z-index: 2;left: 7%;right: 17%;top:15vh;color: white">Showcase Your company and solutions in front of over 9000 water professionals.
+			</h1>
+			<p style="position: absolute;z-index: 2;color: white;font-size: 15px;left: 7%;right: 17%;top:35vh;">The benefits of sponsoring go well beyond the Congress and can help cement your products and services as the ‘go-to’ brand for water professionals. You will take advantage of branding rights, targeted IWA promotions, online and offline exposure through multiple communications and media channels, business forums and VIP networking.</p>
+				
+		
+
+		<div class="buttons">
+
+					
+
+			<div class="defwidth">
+			<div class="givepos" style="position: absolute;z-index: 2;background-color: lightblue;height: 35px;width: 250px;line-height: 30px;text-align: center;left: 7%;right: 17%;top:50vh;">
+			<a href="#" title="" target="_blank">INTERECTIVE FLOORPLAN</a>
+			</div>
+			</div>
+
+			<div class="defwidth">
+			<div class="givepos" style="position: absolute;z-index: 2;background-color: lightblue;height: 35px;width: 250px;line-height: 30px;text-align: center;left: 37%;right: 17%;top:50vh;">
+			<a href="#" title="" target="_blank">PRINTABLE FLOORPLAN</a>
+			</div>
+			</div>
+
+		</div>
+</div>
+		</div> 
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-sm-12">
+
+		<div>
+			<div>
+			<div>
+				<div style="padding-top: 100px;">
+					<h1>Contact</h1>
+					<p>IWA Exhibition management/Match+</p>
+					<p>Bezuidenhoutseweg 2 • 2594 AV The Hague</p>
+					<p>T: +31 (0) 70 382 00 28 • F: +31 (0) 70 382 68 14 • Email: info@iwa-exhibitions.com</p>
+					
+				</div>
+			</div>
+				<div style="background-color:orange;width: 200px;height: 40px;line-height: 40px;text-align: center;margin-top: 30px;">
+					<a href="http://worldwatercongress.org/resilient-cities-forum/" title="" target="_blank">Terms and Conditions</a>
+				</div>
+				<div style="background-color: blue;width: 100px;height: 40px;line-height: 40px;text-align: center;margin-top: 30px;">
+					<a href="http://worldwatercongress.org/resilient-cities-forum/" title="" target="_blank">Get in touch</a>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="col-lg-6 col-sm-12" style="padding-top: 100px;">
+			<div>
+				<div>
+					<iframe src="https://player.vimeo.com/video/262414416?app_id=122963" width="490" height="281" frameborder="0" title="#WorldWaterCongress Cities Forum" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container" style="padding-top: 40px;">
+	<div class="row">
+<h1>What Exhibitors think</h1>		
+	</div>
+</div>
+
+<div class="container">
+	<div class="row" style="display: inline-block;">
+		<div class="videos">
+					<iframe src="https://player.vimeo.com/video/262414416?app_id=122963" width="380" height="200" frameborder="0" title="#WorldWaterCongress Cities Forum" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+		<div class="videos">
+					<iframe src="https://player.vimeo.com/video/262414416?app_id=122963" width="380" height="200" frameborder="0" title="#WorldWaterCongress Cities Forum" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+		<div class="videos">
+					<iframe src="https://player.vimeo.com/video/262414416?app_id=122963" width="380" height="200" frameborder="0" title="#WorldWaterCongress Cities Forum" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+		<div class="videos">
+					<iframe src="https://player.vimeo.com/video/262414416?app_id=122963" width="380" height="200" frameborder="0" title="#WorldWaterCongress Cities Forum" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+		<div class="videos">
+					<iframe src="https://player.vimeo.com/video/262414416?app_id=122963" width="380" height="200" frameborder="0" title="#WorldWaterCongress Cities Forum" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+		<div class="videos">
+					<iframe src="https://player.vimeo.com/video/262414416?app_id=122963" width="380" height="200" frameborder="0" title="#WorldWaterCongress Cities Forum" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+		<div class="videos">
+					<iframe src="https://player.vimeo.com/video/262414416?app_id=122963" width="380" height="200" frameborder="0" title="#WorldWaterCongress Cities Forum" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+		<div class="videos">
+					<iframe src="https://player.vimeo.com/video/262414416?app_id=122963" width="380" height="200" frameborder="0" title="#WorldWaterCongress Cities Forum" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+		<div class="videos">
+					<iframe src="https://player.vimeo.com/video/262414416?app_id=122963" width="400" height="200" frameborder="0" title="#WorldWaterCongress Cities Forum" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+		
+	</div>
+</div>
+
+
+
+<div style="background-color: #A3A3A3;margin-top: 100px;">
+
+<div class="container">
+	<div class="row">	
+	<h1>Reserve a time slot to host a business forum</h1>
+</div>
+</div>
+
+<div class="container">
+	<div class="row">
+	
+		<div class="col-lg-6 col-sm-12">
+
+		<div>
+			<div>
+			<div>
+				<div style="padding-top: 100px;">
+					<h1>Business Forums</h1>
+					<h2 style="font-size: 1.2em;margin-top: 30px;"><b>Business Forum sessions take place Monday 17th till Thursday 20th September 2018</b></h2>
+					<p>The Business Forums are a full component of the Technical Programme of the IWA WWCE2018 and provide a series of sessions where Sponsors & Exhibitors present their innovations and projects that contribute to shaping our water future.
+					</p>
+					<p>They are held in walk-in theaters at the exhibition floor.
+							Apart from delegates and exhibitor staff, trade visitors have access to these Business Forum sessions also.</p>
+				</div>
+			</div>
+				<div style="background-color: blue;width: 200px;height: 40px;line-height: 40px;text-align: center;margin-top: 30px;margin-bottom: 20px">
+					<a href="http://worldwatercongress.org/resilient-cities-forum/" title="" target="_blank">Book your business forum</a>
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+		<div class="col-lg-6 col-sm-12" style="padding-top: 100px;">
+			<div>
+				<div>
+					<iframe src="https://player.vimeo.com/video/262414416?app_id=122963" width="490" height="281" frameborder="0" title="#WorldWaterCongress Cities Forum" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+</div>
+
+
+
+<div class="container">
+	<div class="row">
+
+		<h1>Booking Information</h1>
+		<p style="padding-top: 30px">Join over 9000 leading professionals and companies from across the water sector, including thought leaders from within and outside the water sector.</p>
+		<p>The IWA World Water Congress & Exhibition is the global event for water professionals covering the full water cycle. However, as the Congress rotates through cities and countries each event has an extra emphasis on issues of specific interest to the region.</p>
+		<p>Focusing on leading practice, innovation and solutions, the event provides new networking and business opportunities, and ensures maximum exposure between participants, exhibitors and sponsors. It connects you with the right people and the right solutions, fosters new collaborations and partnerships, and provides a platform for exhibitors and sponsors to raise their profile amongst leading water professionals and companies.
+
+</p>
+		
+	</div>
+</div>
+
+<div style="height: 60px"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="carousel slide multi-item-carousel" id="theCarousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/f44336/000000" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/e91e63/000000" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/9c27b0/000000" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+          </div>
+          <!-- add  more items here -->
+          <!-- Example item start:  -->
+          
+          <div class="item">
+            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+          </div>
+          
+          <!--  Example item end -->
+        </div>
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+	// Instantiate the Bootstrap carousel
+$('.multi-item-carousel').carousel({
+  interval: false
+});
+
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  } else {
+  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+</script>
+
+
+</body>
+</html>

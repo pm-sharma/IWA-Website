@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Visitors</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	<style>
+	#sidebar{
+		padding: 50px;
+		width: 28vw;
+	}
+	</style>
+
+</head>
+
+<body style="background-color: #00AEFF">
+
+<div id="sidebar" class="sidebar" style="display: inline-block;background-color: white;position: fixed;top: 0%">	
+		<header>
+			<div>
+				<a href="https://visitors.iwa-exhibitions.com/" class="" rel="home" ><img width="248" height="194" src="https://visitors.iwa-exhibitions.com/wp-content/uploads/2018/05/cropped-IWA-1.jpg" class="" alt="IWA World Water Exhibition Tokyo 2018">
+				</a>
+				<p>
+					<a href="https://visitors.iwa-exhibitions.com/" rel="home" style="font-size: 2em;">IWA World Water<br> Exhibition Tokyo<br> 2018</a>
+				</p>
+				<p style="padding-top: 10px;padding-bottom: 10px;">Visitor Registration</p>
+				<button style="padding-top: 10px;padding-bottom: 10px;">Menu and widgets</button>
+			</div>
+		</header>
+			<div>
+			<div>
+				<aside>
+				<ul>
+					
+					<li class=""><a lang="en-GB" hreflang="en-GB" href="https://visitors.iwa-exhibitions.com/">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAflJREFUeNpinDRzn5qN3uFDt16+YWBg+Pv339+KGN0rbVP+//2rW5tf0Hfy/2+mr99+yKpyOl3Ydt8njEWIn8f9zj639NC7j78eP//8739GVUUhNUNuhl8//ysKeZrJ/v7z10Zb2PTQTIY1XZO2Xmfad+f7XgkXxuUrVB6cjPVXef78JyMjA8PFuwyX7gAZj97+T2e9o3d4BWNp84K1NzubTjAB3fH0+fv6N3qP/ir9bW6ozNQCijB8/8zw/TuQ7r4/ndvN5mZgkpPXiis3Pv34+ZPh5t23//79Rwehof/9/NDEgMrOXHvJcrllgpoRN8PFOwy/fzP8+gUlgZI/f/5xcPj/69e/37//AUX+/mXRkN555gsOG2xt/5hZQMwF4r9///75++f3nz8nr75gSms82jfvQnT6zqvXPjC8e/srJQHo9P9fvwNtAHmG4f8zZ6dDc3bIyM2LTNlsbtfM9OPHH3FhtqUz3eXX9H+cOy9ZMB2o6t/Pn0DHMPz/b+2wXGTvPlPGFxdcD+mZyjP8+8MUE6sa7a/xo6Pykn1s4zdzIZ6///8zMGpKM2pKAB0jqy4UE7/msKat6Jw5mafrsxNtWZ6/fjvNLW29qv25pQd///n+5+/fxDDVbcc//P/zx/36m5Ub9zL8+7t66yEROcHK7q5bldMBAgwADcRBCuVLfoEAAAAASUVORK5CYII=" title="English" alt="English">
+						<span style="margin-left:0.3em;">English
+						</span></a>
+					</li>
+					
+					<li class=""><a lang="ja" hreflang="ja" href="https://visitors.iwa-exhibitions.com/ja/2018%e5%b9%b4iwa%e4%b8%96%e7%95%8c%e4%bc%9a%e8%ad%b0%e3%83%bb%e5%b1%95%e7%a4%ba%e4%bc%9a%ef%bc%8d%e5%b1%95%e7%a4%ba%e4%bc%9a%e3%81%b8%e3%81%ae%e5%85%a5%e5%a0%b4%e7%99%bb%e9%8c%b2%ef%bc%8d/">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAE2SURBVHjaYvz69SsDEvj37x+ERGbAwZ9//wACiAUoysXFBST///8P0QOm//+HU0jgxYsXAAHEAlP0H8HYt+//4SP/f//6b2b238sLrpqRkRFoCUAAsaCrXrv2/8KF///8+f/r9//Dh/8/ffI/OQWiAeJCgABigrseJPT27f/Vq////v3/1y8oWrzk/+PHcEv+/PkDEEBMEM/B3fj/40eo0t9g8suX/w8f/odZAVQMEEAsQAzj/2cQFf3PxARWCrYEaBXQLCkpqB/+/wcqBgggJrjxQPX/hYX/+/v///kLqhpIBgf/l5ODhxiQBAggFriToDoTEv5zcf3ftQuk2s7uf0wM3MdAAPQDQAAxvn37lo+PDy4KZUDcycj4/z9CBojv3r0LEEAgG969eweLSBDEBSCWAAQYACaTbJ/kuok9AAAAAElFTkSuQmCC" title="日本語" alt="日本語">
+						<span style="margin-left:0.3em;">日本語
+						</span></a>
+					</li>
+				</ul>
+
+				</aside>
+
+				<aside style="padding-top: 40px;padding-bottom: 40px;"><h2>Visitor leaflet</h2>	
+				<div><p>Click on the image below for the Visitor leaflet.</p>
+				</div>
+				</aside>
+
+				<aside style="padding-bottom: 30px;">
+					<a href="https://docs.iwa-exhibitions.com/documents/2018/07/iwa-wwce-2018-visitor-invitation-digital.pdf">
+						<img width="212" height="300" src="https://visitors.iwa-exhibitions.com/wp-content/uploads/2018/07/Rego-Brochure-212x300.png" class="image wp-image-738  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" srcset="https://visitors.iwa-exhibitions.com/wp-content/uploads/2018/07/Rego-Brochure-212x300.png 212w, https://visitors.iwa-exhibitions.com/wp-content/uploads/2018/07/Rego-Brochure.png 712w" sizes="(max-width: 212px) 100vw, 212px">
+					</a>
+				</aside>			
+			</div>
+		
+			</div>
+
+</div>
+
+
+<div style="display: inline-block;">
+
+<main style="width: 60vw;background-color: white;margin-left: 33.2vw;padding: 80px;padding-top:40px;margin-top: 10vh;">
+
+		
+<article style="font-size: 1.5em;">
+	
+	<header>
+		<h1><b>IWA World Water Exhibition 2018 – Visitor Registration</b></h1>	
+	</header>
+<br>                        
+	<div>
+		<div style="border: 1px solid red; padding: 1ex; text-align: center;font-size: 1em;">
+			このページは&nbsp;
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAE2SURBVHjaYvz69SsDEvj37x+ERGbAwZ9//wACiAUoysXFBST///8P0QOm//+HU0jgxYsXAAHEAlP0H8HYt+//4SP/f//6b2b238sLrpqRkRFoCUAAsaCrXrv2/8KF///8+f/r9//Dh/8/ffI/OQWiAeJCgABigrseJPT27f/Vq////v3/1y8oWrzk/+PHcEv+/PkDEEBMEM/B3fj/40eo0t9g8suX/w8f/odZAVQMEEAsQAzj/2cQFf3PxARWCrYEaBXQLCkpqB/+/wcqBgggJrjxQPX/hYX/+/v///kLqhpIBgf/l5ODhxiQBAggFriToDoTEv5zcf3ftQuk2s7uf0wM3MdAAPQDQAAxvn37lo+PDy4KZUDcycj4/z9CBojv3r0LEEAgG969eweLSBDEBSCWAAQYACaTbJ/kuok9AAAAAElFTkSuQmCC">
+			&nbsp;<a href="/ja/"><strong>日本語</strong></a>でもご覧いただけます
+		</div>
+			
+			<p>&nbsp;</p>
+			<p>Welcome to the on-line registration service for trade visitors to the IWA World Water<br>
+			Exhibition 2018.</p>
+			<p>You are about to register for your visit at the IWA World Water Exhibition in Tokyo. The exhibition is open from <strong>Monday 17 September – Thursday 20 September 2018.</strong></p>
+			<p><strong>The IWA World Water Exhibition will take place at&nbsp;Tokyo Big Sight Inc. 3‑11‑1 Ariake, Koto‑ku, Tokyo, Japan 135‑0063.</strong></p>
+			<p>In addition to access to the exhibition, trade visitors also have access to the Business Forum sessions, which are a full component of the Congress Programme.</p>
+			<div style="background: lightgrey; padding: 1em; font-size: smaller;">To attend the IWA World Water Congress sessions you will have to register separately as a congress delegate at&nbsp;<a href="http://www.worldwatercongress.org" target="_blank" rel="noopener">www.worldwatercongress.org</a>&nbsp;and pay a congress registration fee. If you have registered already as a congress delegate do not register again here; congress delegates have free access to the exhibition.</div>
+			<p>&nbsp;</p>
+			<p>Please complete your name and company details below and click REGISTER to proceed. Ensure that all fields are completed before pressing REGISTER.&nbsp;After pressing REGISTER you will get a confirmation e-mail: please print this e-mail and bring it with you the first day you visit. This letter is your free entrance pass to the IWA World Water Exhibition.</p>
+			<p style="text-align: center; color: red;">The pre-registration for visitor is closed, but it is still possible to register free of charge as a visitor onsite at the registration desk.<br>
+			We are more than happy to welcome you at Tokyo Big Sight, West Hall 1 for the IWA World Water Exhibition!</p>
+			<p style="text-align: center;">For more information, please contact portal@iwa-exhibitions.com</p>
+			<p>Your company details will only be used to send you information about the IWA World Water Congress and Exhibition 2018. If you prefer not to receive any further correspondence, please send a message to&nbsp;<a href="mailto:info@iwa-exhibitions.com">info@iwa-exhibitions.com</a> and you will not be receiving any information after the event.</p>
+			<p>For more information about the IWA World Water Congress and Exhibition 2018 please visit&nbsp;<a href="http://worldwatercongress.org" target="_blank" rel="noopener">www.worldwatercongress.org</a></p>
+						
+		</div>
+
+				
+</article>
+
+</main>
+
+
+</div>
+
+
+</body>
+
+</html>
