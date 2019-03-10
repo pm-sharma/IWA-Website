@@ -14,23 +14,103 @@
 	
 
 	<style type="text/css">
+
+		@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,700,600italic,600,400italic);
+
+		.y {
+		  font-family: 'Titillium Web', cursive;
+		  margin: 0 auto;
+		  text-align: center;
+		  color: white;
+		  background: #222;
+		  font-weight: 100;
+		}
+
+		.x {
+		  display: inline-block;
+		  line-height: 1;
+		  padding: 20px;
+		  font-size: 40px;
+		}
+
+		span {
+		  display: block;
+		  font-size: 20px;
+		  color: white;
+		}
+
+		#days {
+		  font-size: 100px;
+		  color: white;
+		  background-color: black;
+		  margin-bottom: 30px;
+		  margin-top: 30px;
+		}
+		#hours {
+		  font-size: 100px;
+		  color: white;
+		  background-color: black;
+		  margin-bottom: 30px;
+		  margin-top: 30px;
+		}
+		#minutes {
+		  font-size: 100px;
+		  color: white;
+		  background-color: black;
+		  margin-bottom: 30px;
+		  margin-top: 30px;
+		}
+		#seconds {
+		  font-size: 100px;
+		  color: white;
+		  background-color: black;
+		  margin-bottom: 30px;
+		  margin-top: 30px;
+		}
+
+
+		@media (max-width: 780px){
+			.subbut{
+				padding-left: 15px;
+			}
+			.black-content {
+				height: 96vh;
+			}
+			.inpbut{
+				width: 200px
+			}
+			.subbut{
+				width: 100px;
+				margin-left:-10px; 
+			}
+		}
+
+		@media (min-width: 900px){
+				.givepos{
+					 top:145vh;
+					 left: 50%;
+				}
+				.black{
+					display: inline-block;
+				}
+				.inpbut{
+					width: 300px;
+				}
+				.subbut{
+					margin-left: -10px;
+					width: 150px;
+				}
+				.lesspad{
+					padding-left: -22px;
+				}
+			}
+
 		#footer {
-	    /*z-index: 100 !important;*/
-	    /*position: relative !important;*/
 		background: #222;
 		color: #fff;
 		padding: 80px 0 35px 0;
 		}
-		body {
-		    font: normal 18px OpenSans, sans-serif;
-		    color: #222;
-		    line-height: 34px;
-		    background: #fff;
-		}
-		html {
-		    font-size: 10px;
-		    font-family: sans-serif;
-		}
+		
 		li:before {
 		    content: "\e131";
 		    font-family: 'Glyphicons Halflings';
@@ -40,58 +120,45 @@
 		    color: #4a4a4a;
 		}
 
-		#session-counter {
-		    background: #00adef;
-		    color: #fff;
-		    padding: 80px 0 100px;
-		    margin-top: 0 !important;
-		}
-
-		#session-counter .container-fluid {
-			margin-top: 0 !important
-		}
-		#session-counter h3 {
-			font: bold 36px Arial, Helvetica, sans-serif;
-			letter-spacing: -1.5px;
-			margin-bottom: 28px
-		}
-		#session-counter a {
-			width: auto !important;
-		}
-		.count-box {
-			background: #222;
-			text-align: center;
-			display: inline-block;
-			width: 160px;
-			height: 160px;
-			margin: 0 9px 50px;
-			text-transform: uppercase
-		}
-		#countdown{
-			margin-left:300px; 
-		}
-		.count-box strong {
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 72px;
-			letter-spacing: -3px;
-			line-height: normal	
-		}
-		@media (max-width:400px) {
-			.count-box {
-				width: 125px;
-				height: 125px;
-				margin: 0 9px 20px;
-				font-size: 14px
-			}
-			.count-box strong {
-				font-size: 60px;
-			}
-		}
+		
+	
 
 		.vertical-align{
 			line-height: 160px;
 		}
 
+		.black{
+				background-color: black;
+				color: white;
+				text-align: center;
+				font-size: 20px;
+				height: 16vh;
+				width: 13vw;
+				vertical-align: middle;
+				font-weight:900;
+				padding-top: 4vh;
+			}
+			
+			.text-block {
+			  position: absolute;
+			  bottom: 20px;
+			  right: 20px;
+			  background-color: black;
+			  color: white;
+			  padding-left: 20px;
+			  padding-right: 20px;
+			}
+
+			.black-content {
+				height: 20vh;
+			}
+
+
+
+
+
+		
+	
 
 	</style>
 
@@ -107,31 +174,17 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-	<div id="session-counter" style="margin: auto auto;">
-		<div class="container-fluid">
-			
-                <h3 class="text-center">Join us in Copenhagen! See you in...</h3>
-            			<div id="countdown"><div class="row row-centered"><div class="count-box"><div class="vertical-align"><strong>599</strong><br><!-- days --></div></div><div class="count-box"><div class="vertical-align"><strong>01</strong><br><!-- hour --></div></div><div class="count-box">
-            				<div class="vertical-align">
-            				<strong>26</strong><br><!-- minutes -->
-            				</div></div><div class="count-box"><div class="vertical-align"><strong>28</strong><br><!-- seconds --></div>
-            			</div><div></div></div></div>
-			<div class="text-center"> 
-							</div>
+<div class="container-fluid x y" style="background-color: #00ADEF;width: 100%">
+	<h1 style="font-weight: 600;color: white">Join us in Copenhagen! See you in...</h1>
+	<div class="x">
+		<div class="x" id="timer">
+		   <div class="x" id="days"></div>
+	  	   <div class="x" id="hours"></div>
+	       <div class="x" id="minutes"></div>
+	  	   <div class="x" id="seconds"></div>
 		</div>
 	</div>
-
+</div>
 
 
 
@@ -147,15 +200,15 @@
 				<div class="col-md-6 col-xs-12">
 					<div id="text-2" class=""><h4>Stay informed</h4>			
 						<div class="textwidget">						
-							<p>Latest updates and announcements, delivered to your e-mail.</p>
+							<p>Latest updates and announcements, delivered to your e-mail.</p><br>
 							<form method="post">
 
 								<div>	
 								
-										<input type="email" name="EMAIL" style="width: 300px;height:40px;border:none " placeholder="Your email address" required="" class="col-md-8 col-xs-8">
+										<input class="inpbut" type="email" name="EMAIL" style="height:40px;color: black;border:none; " placeholder="  Your email address" required="" class="col-md-8 col-xs-8">
 									
 								
-										<input type="submit" value="Sign up" style="width: 100px;height:40px; margin-left: -6px;border: none;" class="submit-button hvr-bubble-left col-md-4 col-xs-4 btn btn-primary">
+										<input type="submit" value="Sign up" style="height:40px;background-color:#00ADEF;margin-top: -2px; border:none; " class="subbut">
 									
 								</div>
 								<label style="display: none !important;">Leave this field empty if you're human: 
@@ -169,42 +222,40 @@
 									
 
 				<div class="col-md-3 col-md-push-1 col-sm-6 col-xs-12" style="padding-top: 15px;">
-                    <div id="" ><h4>Contact</h4>			
+                    <div id="" ><h3><b>Contact</b></h3>			
                     	<div class=""><p>Email: 
-                    		<a href="#">WWCE2018programme</a><br>
-							Programme: 
-							<a href="#">João Grilo</a><br>
+                    		<a href="#" style="color: #7f7f7f;">WWCE2018programme</a><br>
+							Programme:
+							<a href="#" style="color: #7f7f7f;">João Grilo</a><br>
 							Sponsorship: 
-							<a href="#">Isabelle Servant</a><br>
+							<a href="#" style="color: #7f7f7f;">Isabelle Servant</a><br>
 							Tel:
-							<a href="#">+31 70 315 07 92</a><br>
+							<a href="#" style="color: #7f7f7f;">+31 70 315 07 92</a><br>
 							Exhibition: 
-							<a href="#">Roy Agterbos</a><br>
+							<a href="#" style="color: #7f7f7f;">Roy Agterbos</a><br>
 							Tel: 
-							<a href="#">+31 70 382 00 28</a></p>
+							<a href="#" style="color: #7f7f7f;">+31 70 382 00 28</a></p>
 							<p>Media: 
-							<a href="#">Rui Veras</a><br>
+							<a href="#" style="color: #7f7f7f;">Rui Veras</a><br>
 							Congress: 
-							<a href="#">Keith Robertson</a></p>
+							<a href="#" style="color: #7f7f7f;">Keith Robertson</a></p>
 							<p>Website: 
-							<a href="#" target="_blank" rel="noopener">P/Q</a></p>
+							<a href="#" style="color: #7f7f7f;" target="_blank" rel="noopener">P/Q</a></p>
 						</div>
 					</div>				
 				</div>
 		
-				<div class="col-md-2 col-md-push-1 col-sm-6 col-xs-12" style="padding-top: 15px;">
+				<div class="col-md-2 col-md-push-1 col-sm-6 col-xs-12 extpad" style="padding-top: 15px;padding-left: 37px;">
                     <div class="" id="" role="navigation">
-					   <div id="" class=""><h4>Quick links</h4>			
+					   <div><h3 class="lesspad"><b>Quick links</b></h3>			
 					   	<div class="">
 					   		<ul class="list-unstyled">
-                            	<li><a href="#">About</a></li>
-								<li><a href="#">Media</a></li>
-								<li><a href="#" target="_blank">IWA website</a></li>
-								<li><a href="#" target="_blank">All IWA events</a></li>
-                                <li><a href="#" target="_blank">IWA publishing</a></li>
-								<li><a href="#" target="_blank">Development Congress</a></li>
-								<li><a href="#" target="_blank">IWA Connect</a></li>
-								<li><a href="#" target="_blank">YWP International Conference</a></li>
+                            	<li><a href="#">ABOUT</a></li>
+								<li><a href="#">MEDIA</a></li>
+								<li><a href="#" target="_blank">ALL IWA EVENTS</a></li>
+                                <li><a href="#" target="_blank">FUTURE LEADERS</a></li>
+								<li><a href="#" target="_blank">IWA-LET</a></li>
+								<li><a href="#" target="_blank">DEVELOPMENT CONGRESS</a></li>
 							</ul>
 						</div>
 						</div>          
@@ -213,10 +264,10 @@
 
 				<div class="col-md-12 social-networks">
                     <div id="" class="">			
-                    	<div class=""><p>&nbsp;</p>
-						<p>
-							<a href="#"><strong>#WorldWaterCongress &nbsp;</strong></a> &nbsp;&nbsp;<a class="" href="#" target="_blank" rel="noopener"><strong>@IWAhq</strong></a>&nbsp; &nbsp;
-							<a class="twitter-hash" href="#" target="_blank" rel="noopener"><strong>#iwacongress&nbsp;</strong></a>
+                    	<div><p>&nbsp;</p>
+						<p style="font-size: 25px;">
+							<a href="#"><strong style="color: white">#WorldWaterCongress &nbsp;</strong></a> &nbsp;&nbsp;<a class="" href="#" target="_blank" rel="noopener"><strong style="color: white">@IWAhq</strong></a>&nbsp; &nbsp;
+							<a class="twitter-hash" href="#" target="_blank" rel="noopener"><strong style="color: white">#iwacongress&nbsp;</strong></a>
 						</p>
 						</div>
 					</div>				
@@ -228,6 +279,38 @@
 
 
 <script type="text/javascript" src="http://worldwatercongress.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1"></script>
+
+
+<script type="text/javascript">
+	function makeTimer() {
+
+	//		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
+		var endTime = new Date("29 April 2020 9:56:00 GMT+01:00");			
+			endTime = (Date.parse(endTime) / 1000);
+
+			var now = new Date();
+			now = (Date.parse(now) / 1000);
+
+			var timeLeft = endTime - now;
+
+			var days = Math.floor(timeLeft / 86400); 
+			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+  
+			if (hours < "10") { hours = "0" + hours; }
+			if (minutes < "10") { minutes = "0" + minutes; }
+			if (seconds < "10") { seconds = "0" + seconds; }
+
+			$("#days").html(days + "<span>Days</span>");
+			$("#hours").html(hours + "<span>Hours</span>");
+			$("#minutes").html(minutes + "<span>Minutes</span>");
+			$("#seconds").html(seconds + "<span>Seconds</span>");		
+
+	}
+
+	setInterval(function() { makeTimer(); }, 1000);
+</script>
 
 
 

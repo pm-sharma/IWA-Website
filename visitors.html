@@ -13,9 +13,31 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	
 	<style>
-	#sidebar{
+	
+	@media(min-width: 801px){
+		#rightbar{
+		margin-left: 33.2vw;
+		width: 60vw;background-color: white;padding: 80px;padding-top:40px;margin-top: 10vh;
+		}
+		#sidebar{
+			position: fixed;
+		}
+		#sidebar{
 		padding: 50px;
 		width: 28vw;
+		}
+	}
+	@media (max-width: 900px){
+		#sidebar{
+			width: 100%;
+			align-self: center;
+			padding: 200px;
+			padding-top: 20px;
+			width: 100vw;
+		}
+		#rightbar{
+			width: 100vw;background-color: white;padding: 80px;padding-top:40px;margin-top: 10vh;margin: auto auto;
+		}
 	}
 	</style>
 
@@ -23,7 +45,7 @@
 
 <body style="background-color: #00AEFF">
 
-<div id="sidebar" class="sidebar" style="display: inline-block;background-color: white;position: fixed;top: 0%">	
+<div id="sidebar" class="sidebar" style="display: inline-block;background-color: white;top: 0%">	
 		<header>
 			<div>
 				<a href="https://visitors.iwa-exhibitions.com/" class="" rel="home" ><img width="248" height="194" src="https://visitors.iwa-exhibitions.com/wp-content/uploads/2018/05/cropped-IWA-1.jpg" class="" alt="IWA World Water Exhibition Tokyo 2018">
@@ -74,7 +96,7 @@
 
 <div style="display: inline-block;">
 
-<main style="width: 60vw;background-color: white;margin-left: 33.2vw;padding: 80px;padding-top:40px;margin-top: 10vh;">
+<main id="rightbar" style="">
 
 		
 <article style="font-size: 1.5em;">
